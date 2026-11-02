@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Heorhii Andruskyi, Portfolio</title>
+<meta name="description" content="Portfolio of Heorhii Andruskyi: 3D environment and props artist, game design and XR. Looking for an internship in Belgium.">
+<meta property="og:title" content="Heorhii Andruskyi, Portfolio">
+<meta property="og:description" content="3D environments and props, game design, Unity and XR. Internship from February 2027, Belgium.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E📜%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=UnifrakturCook:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080c09;--pg:#0e1410;--ink:#e4dfce;--mu:#8a9a8d;--g:#4fd67a;--ln:#2a3a2e;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.65 'IM Fell English',Georgia,serif}
+a{color:inherit;text-decoration:none}
+.mono{font:12.5px/1.5 'JetBrains Mono',ui-monospace,monospace;color:var(--g);letter-spacing:.04em}
+.wrap{max-width:960px;margin:0 auto;padding:0 5vw}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;border-bottom:1px solid var(--ln)}
+header b{font:400 20px 'IM Fell English SC',Georgia,serif;letter-spacing:.05em}
+header nav{display:flex;gap:20px}
+header nav a{font:15px 'IM Fell English',Georgia,serif;color:var(--mu)}
+header nav a:hover,.back:hover{color:var(--g)}
+.hero{display:grid;grid-template-columns:1fr 240px;gap:32px;align-items:center;padding:56px 0 28px}
+h1{font:400 clamp(38px,7vw,66px)/1.04 'IM Fell English SC',Georgia,serif;margin:10px 0 16px;letter-spacing:.01em}
+h1 small{display:block;font-size:.5em;color:var(--mu);letter-spacing:.06em}
+.lead{font-size:21px;color:#c9c5b4;max-width:34em}
+.dial{width:100%;max-width:240px;justify-self:center}
+.dial .r{transform-origin:120px 120px;animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.dial .r{animation:none}}
+.btn{display:inline-block;margin-top:14px;padding:9px 18px;border:1px solid var(--g);color:var(--g);font-size:17px}
+.btn:hover{background:var(--g);color:var(--bg)}
+.plate{margin:8px 0 0}
+.plate img{width:100%;display:block;mix-blend-mode:screen}
+.plate figcaption{margin-top:6px;color:var(--mu)}
+h2{font:400 34px/1.2 'IM Fell English SC',Georgia,serif;margin:64px 0 18px}
+.row{display:grid;grid-template-columns:56px 1fr auto;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px dotted var(--ln)}
+.row:hover b{color:var(--g)}
+.row .n{font:700 34px/1 'UnifrakturCook',serif;color:var(--g)}
+.row b{font-weight:400;font-size:24px}
+.row small{display:block;color:var(--mu);font-size:15px}
+.row .st{font-size:15px;color:var(--mu);text-align:right}
+.page{background:var(--pg);border:1px solid var(--ln);box-shadow:0 0 0 5px var(--bg),0 0 0 6px var(--ln);padding:clamp(20px,5vw,48px);margin:40px 0 24px}
+.page h2{margin:8px 0 12px;font-size:clamp(30px,6vw,46px)}
+.page h3{font:400 24px 'IM Fell English SC',Georgia,serif;margin:36px 0 8px;color:var(--g)}
+.page>p:first-of-type::first-letter{font:700 3.2em/.8 'UnifrakturCook',serif;float:left;padding:6px 8px 0 0;color:var(--g)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px 24px;margin:28px 0 0;padding:16px 0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.facts dt{color:var(--mu)}.facts dd{margin:2px 0 0}
+figure{margin:20px 0 0}
+figure img{width:100%;display:block;border:1px solid var(--ln)}
+figcaption{font-size:15px;color:var(--mu);margin-top:6px;font-style:italic}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.gal figure{margin:0}
+.ph{border:1px dashed var(--ln);padding:60px 20px;text-align:center;margin-top:20px;color:var(--mu)}
+ul{padding-left:1.1em;margin:0}li{margin:4px 0}
+.note{font-size:16px;color:var(--mu);font-style:italic;margin-top:14px}
+.page .plate{max-width:520px;margin-inline:auto}
+.gal img{max-height:480px;object-fit:contain;background:#0a0f0b}
+.xt{align-items:center}.xt img{max-height:520px;object-fit:contain;background:#0a0f0b}
+.wip{border:1px solid var(--g);color:var(--g);padding:8px 14px;margin:14px 0 0;font-size:17px}
+.wip-st{color:var(--g)!important}
+.back{display:inline-block;margin-top:28px;color:var(--mu);font-size:17px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.chips span{display:inline-block;border:1px solid var(--ln);padding:2px 12px;margin:0 8px 8px 0;font-size:17px}
+footer{margin:80px 0 40px;color:var(--mu);font-size:15px;border-top:1px solid var(--ln);padding-top:18px}
+@media(max-width:720px){.hero,.two{grid-template-columns:1fr}.dial{max-width:160px;justify-self:start}.row{grid-template-columns:44px 1fr}.row .st{grid-column:2;text-align:left}}
+:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+.hero{grid-template-columns:1fr 130px;padding:34px 0 22px}.hero .dial{max-width:130px}
+.car{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding:18px 0;border-block:1px solid var(--ln);background:var(--pg);margin-top:6px}
+.car::-webkit-scrollbar{display:none}.trk{display:flex;gap:16px;width:max-content;padding:0 16px}
+.tile{position:relative;flex:none;width:340px;height:220px;border:1px solid var(--ln);overflow:hidden;background:#000;transition:opacity .25s,transform .25s,border-color .25s}
+.tile img{width:100%;height:100%;object-fit:cover;display:block}
+.tile span{position:absolute;left:0;right:0;bottom:0;background:rgba(8,12,9,.88);padding:6px 12px;font-size:18px}
+.car:hover .tile{opacity:.5}.car .tile:hover,.car .tile:focus-visible{opacity:1;border-color:var(--g);transform:scale(1.03)}
+.btn+.btn{margin-left:10px}.wrap>.btn{margin-top:22px}
+.row{grid-template-columns:56px 110px 1fr auto;align-items:center}.row .th{width:110px;height:70px;object-fit:cover;border:1px solid var(--ln)}
+header nav a.on{color:var(--g);border-bottom:2px solid var(--g);padding-bottom:3px}
+.turn{animation:turn .45s ease-out;transform-origin:left center}
+@keyframes turn{from{opacity:0;transform:perspective(900px) rotateY(-5deg) translateX(18px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.turn{animation:none}}
+.folio{text-align:center;margin:50px 0 0;color:var(--mu)}
+.vid{position:relative;aspect-ratio:16/9;border:1px solid var(--ln);background:#000}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ext{color:var(--g);border-bottom:1px solid var(--g)}
+.chips .sk{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ln);padding:4px 12px 4px 6px;margin:0 8px 8px 0;font-size:17px}
+.sk img,.sk i{width:24px;height:24px;object-fit:contain}.sk i{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--g);color:var(--g);font:12px 'JetBrains Mono',monospace;border-radius:4px}
+@media(max-width:720px){.hero{grid-template-columns:1fr 80px}.hero .dial{max-width:80px}.tile{width:260px;height:180px}.row{grid-template-columns:44px 1fr}.row .th{display:none}}
+.flow{display:flex;flex-direction:column;align-items:center;gap:10px}.eq{margin:0;width:min(100%,340px)}.eq img{width:100%;height:380px;object-fit:contain;background:#0a0f0b}.arr{width:24px;height:70px}.pair{display:flex;gap:14px;align-items:flex-start;justify-content:center;flex-wrap:wrap;width:100%}.plus{align-self:center;font-size:24px}
+@media(max-width:720px){.plus{display:none}.eq img{height:300px}}
+span.th{display:block}
+.vc{font-size:15px;color:var(--mu);font-style:italic;margin:6px 0 4px}
+video{width:100%;display:block;border:1px solid var(--ln);background:#000;max-height:520px}
+.hero{grid-template-columns:1fr 260px;gap:24px}.hero .dial{max-width:260px}
+header a .mono{margin-left:12px}
+@media(max-width:720px){.hero{grid-template-columns:1fr 100px}.hero .dial{max-width:100px}}
+@media(max-width:560px){header a .mono{display:none}}
+
+:root{--w:1040px}
+.wrap{max-width:var(--w)}
+.car{container-type:inline-size;border:1px solid var(--ln);padding:14px;margin:6px 0 0;box-shadow:0 0 0 5px var(--bg),0 0 0 6px var(--ln)}
+.trk{padding:0}
+.tile{width:calc((100cqw - 32px)/3);height:auto;aspect-ratio:5/4}
+.side{display:none;position:fixed;top:0;bottom:0;z-index:-1;pointer-events:none;width:calc((100vw - var(--w))/2 - 24px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M24 6l8 18-8 18-8-18z' fill='none' stroke='%232f8f4d' stroke-opacity='.22'/%3E%3Cg fill='%232f8f4d' fill-fill-opacity='.3' fill-opacity='.3'%3E%3Ccircle cx='0' cy='0' r='1.5'/%3E%3Ccircle cx='48' cy='0' r='1.5'/%3E%3Ccircle cx='0' cy='48' r='1.5'/%3E%3Ccircle cx='48' cy='48' r='1.5'/%3E%3C/g%3E%3C/svg%3E") repeat}
+.side.l{left:0}.side.r{right:0}
+.side::after{content:"";position:absolute;top:0;bottom:0;width:48px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='120' viewBox='0 0 48 120'%3E%3Cg fill='none' stroke='%232f8f4d' stroke-width='1.6'%3E%3Cpath d='M24 0C44 20 44 40 24 60C4 80 4 100 24 120'/%3E%3Cpath d='M24 0C4 20 4 40 24 60C44 80 44 100 24 120'/%3E%3Cpath d='M3 0V120M45 0V120' stroke='%232a3a2e' stroke-width='1'/%3E%3C/g%3E%3Cg fill='%234fd67a'%3E%3Ccircle cx='24' cy='60' r='3'/%3E%3Ccircle cx='24' cy='0' r='3'/%3E%3Ccircle cx='24' cy='120' r='3'/%3E%3Ccircle cx='39' cy='30' r='1.8'/%3E%3Ccircle cx='9' cy='30' r='1.8'/%3E%3Ccircle cx='9' cy='90' r='1.8'/%3E%3Ccircle cx='39' cy='90' r='1.8'/%3E%3C/g%3E%3C/svg%3E") repeat-y center top}
+.side.l::after{right:0}.side.r::after{left:0}
+@media(min-width:1280px){.side{display:block}}
+header{background:var(--bg);position:relative;z-index:2}
+.side::after{opacity:.55}
+@media(max-width:720px){.tile{width:72cqw;aspect-ratio:4/3}}
+</style></head><body>
+<div class="side l" aria-hidden="true"></div><div class="side r" aria-hidden="true"></div>
+<header><a href="#/"><b>H. Andruskyi</b><span class="mono">portfolio</span></a><nav><a href="#/">Stream</a><a href="#/portfolio">Portfolio</a><a href="#/about">About</a></nav></header>
+<main id="app"></main>
+<footer class="wrap">Engravings are public-domain images. Third-party assets and AI-assisted images are credited on each project page.</footer>
+<script>
+const IMG={"blender": "img/blender.png", "c1": "img/c1.jpg", "c2": "img/c2.jpg", "c3": "img/c3.jpg", "faust": "img/faust.jpg", "lb": "img/lb.jpg", "lis": "img/lis.jpg", "lm": "img/lm.jpg", "ma": "img/ma.jpg", "mb": "img/mb.jpg", "mc": "img/mc.jpg", "md": "img/md.jpg", "me": "img/me.jpg", "mf": "img/mf.jpg", "mg": "img/mg.jpg", "mh": "img/mh.jpg", "mi": "img/mi.jpg", "mm": "img/mm.jpg", "mo": "img/mo.jpg", "mz": "img/mz.jpg", "nh0": "img/nh0.jpg", "nh1": "img/nh1.jpg", "nh2": "img/nh2.jpg", "nh3": "img/nh3.jpg", "nh4": "img/nh4.jpg", "nh5": "img/nh5.jpg", "nh6": "img/nh6.jpg", "rv": "img/rv.jpg", "unity": "img/unity.png", "zn": "img/zn.jpg", "zo": "img/zo.jpg", "zr": "img/zr.jpg", "coinp": "img/coinp.jpg"};
+const VID={"coin":["img/coin.mp4"]};
+const R=["I","II","III","IV","V","VI","VII"];
+const P=[
+{s:"necro",t:"Necro Museum",tag:"Unity, interactive horror",st:"Completed, graded 18/20",ls:"Completed",
+sum:"An interactive museum inside a necromancer’s dark mansion, where he keeps the souls of the powerful beings he has collected.",
+f:{Role:"Lead builder and developer",Tools:"Unity, scripting",Context:"First-year assignment at KdG",Result:"18/20"},
+b:"The goal was to build an interactive horror museum in Unity, using our own edited photos as the ghosts. I used it to combine everything I knew about 3D, Unity and storytelling.",
+d:["Built the house and many of the objects inside it","Designed the whole area, indoors and outdoors","Set the lighting and the sound","Wrote the necromancer’s monologue, and gave every ghost a monologue of its own","Turned semi-AI images into animated GIFs on rotating planes to bring the ghosts to life","Wrote the scripts that tie it together"],
+n:"Credits: some props are downloaded Unity assets, and the ghost images are AI-assisted, then edited and animated by me. I did most of the work myself, which my teammates have confirmed.",
+ex:[["The story", "A powerful necromancer collects the souls of great and mighty beings and keeps them in his house, which doubles as a museum. The collection includes a pair of twins, a great pirate, a great vampire, a bride and a nun. The ghosts don’t symbolise anything specific. We added the characters that seemed the most interesting to us."], ["How it works", "A trigger zone detects the player, and when the player enters it, the ghosts appear. Each ghost is a billboard showing an animated GIF on a green background. They are simple, but they were the best I could produce in the time available."]],
+hero:"nh1",hc:"The house at night, seen from the graveyard.",
+vids:[["AYtVhPkl9lg","Gameplay video","A walk through the museum: the house, the graveyard and the ghosts."]],
+g:[["nh0","The in-game poster at the entrance."],["nh3","The living room: fireplace, trophy skull, wine and candle."],["nh2","The study with its gramophone, globe and skull."],["nh4","The hall leading into the main room."],["nh5","Captive ghosts, each in a summoning circle."],["nh6","A bride and a ghost in the upper room."]],
+pl:"faust",pc:"Plate: a conjurer inside his magic circle (public domain woodcut).",
+r:"Graded 18/20. It is a working, playable museum, and I will add a trailer and a longer walkthrough.",
+rf:"My first large, fully working environment in Unity. With more time there are things I would improve, but it taught me how all the parts fit together."},
+{s:"microciv",t:"Micro Civ, a level",tag:"Level design, first-person",st:"Coursework, world from my own game",
+sum:"A first-person level built in 1.5 weeks for an Environmental Level Design class during my Erasmus exchange, taken from the world of my own insect-civilization game. The ants, the trebuchet and the hollow log are my own models.",
+f:{Role:"Level designer and builder",Time:"1.5 weeks",Rule:"Only a first-person controller and an audio trigger",Assets:"Free downloads, plus my own ants, trebuchet and hollow log",Source:"My own game, early development"},
+b:"The task was to build an environment with a start area, an exploring area, a challenge area and an end area. Only objects and sound could lead the player to the finish, with no obvious guidance. The only tools allowed were the first-person controller and an audio trigger that makes objects appear or disappear inside a trigger zone. I made the ants, the trebuchet and the hollow log myself and used free assets for the rest.",
+d:["Built the whole level from the world of my own insect-civilization game","Made the ants, the trebuchet and the hollow log myself, and dressed the rest of the world with free downloaded assets","Led the player with objects, glowing mushrooms and sound alone, along a main route with side branches","Made a challenge area with a maze and parkour: river stones and a tree climb","Ended it at a beehive in a tree, with a view over the whole location","Filled it with monologues, dialogues and small jokes that players can find by accident, especially in the maze"],
+n:"Credits: much of the environment uses free downloaded assets. The ants, the trebuchet and the hollow log are my own work.",
+video:"tqjq8EQxKPY",vh:"Full walkthrough",
+ex:[["How the level guides the player", "Glowing mushrooms lead players mainly to interesting spots where something can be discovered, and overall toward the end of the maze. They guide without dictating the way. Inside the grass maze, the destination, the beehive, rises above the plants, so the player always has a rough sense of direction. Many small finds, dialogues and jokes along the way keep the player from getting bored."], ["Sound triggers", "The audio trigger was one of the two scripts we were allowed to use, next to the first-person controller. I attach a sound source to an object that has a trigger collider. When the player enters the zone, the sound plays, and with one checkbox the object also disappears or appears. In my level, the player picks up a letter, which disappears, and delivers it at the beehive at the end."], ["Testing and changes", "Testers, mostly classmates, gave me recommendations. In the first round I made the maze simpler and moved some objects depending on where players tended to go. A few more user-experience changes are still on my list."]],
+hero:"mo",hc:"The level seen from above: river, forest clearing and the winding path.",
+gh:"Around the level",
+g:[["mm","Top-down map: the main route from start to end in red, side branches in yellow."],["ma","The start: an ant guard, one of my own models, sends you off with a letter for the Bee Palace."],["mb","The exploring area: a trebuchet I made, with its ant crew."],["mc","Dialogues hide small jokes, like ants waiting for their maggot soup."],["md","A shrine that hints without leading."],["mz","In the maze, glowing mushrooms mark the way."],["mf","Lines of dialogue reward those who explore."],["mg","The challenge area: river parkour over stones and lily pads."],["mh","The tree climb up to the beehive."],["mi","The end: the bee at the hive greets the letter-bearer."]],
+r:"A complete, playable level with a video walkthrough. It could become a location in the finished game.",
+rf:"I am happy with how this project turned out. In 1.5 weeks I built a full, detailed environment with a clear sense of purpose. Much could still be improved, but given the strict, short deadline I think I did well. Feedback from testers, mostly classmates, was largely positive, and playtesting also showed me a few things I would change to make the experience smoother for the player."},
+{s:"zlatna",t:"Zlatna, rebrand and bottle design",tag:"Branding, product design",st:"Completed, real client",
+sum:"A full rebranding and bottle redesign for Zlatna, a Croatian olive oil sold in Belgium, made for the International Business Project at KdG.",
+f:{Role:"Bottle design, regular and refillable",Team:"International student team",Client:"Zlatna olive oil",Result:"Client chose our strategy and redesigns"},
+b:"Our team researched the olive oil market across the EU and in specific countries. While the others built the rebranded business plan, I argued that the old bottle did not work in marketing terms and took on the redesign.",
+d:["Suggested redesigning the bottle itself","Designed a new regular bottle","Designed a refillable bottle for customers who like refillables, made to look good in a kitchen"],
+ex:[["Positioning and research", "Zlatna presents itself as a fairly luxurious olive oil brand, and different kinds of olive oil are aimed at different markets and buyers. The more luxurious the oil, the more the bottle has to look the part, so we made the new bottle look rich and expensive."], ["What we changed", "The original bottle was yellow, which we felt didn’t suit olive oil. A buyer should recognise at once that this is olive oil. The new regular bottle has a strict, rectangular shape with an olive branch, and it looks upmarket."], ["How the refillable bottle works", "The refillable bottle takes the shape of an olive. A customer buys it once, online or in a shop, and can then refill it with any oil. The idea is that it would be Zlatna’s oil, but for now that choice is left to the customer."]],
+nohero:1,fl:{h:"From old to new",a:["zo","Before: the original Zlatna bottle."],b:["zn","After: the redesigned regular bottle."],c:["zr","In addition: a refillable bottle, shaped like an olive."]},g:[],
+r:"At the final presentations the client chose our strategy and our redesigns. Other teams redesigned their bottles too, but with AI-generated images; ours were designed by hand.",
+rf:"My first try at product design, and I liked it: looking for references, combining ideas and adding something of my own."},
+{s:"byte",t:"Byte, a two-player console",tag:"Hardware, product design",st:"Completed",
+sum:"A Game Boy-style console for two players who sit facing each other, with a few simple games.",
+f:{Role:"Exterior design, electronics, soldering",Team:"Three people",Context:"Class with a free theme, KdG",Build:"3D printing and wood laser cutting",Hardware:"Arduino, Raspberry Pi"},
+b:"The class let us pick any theme, as long as we built something new and interesting. We made an arcade box for head-to-head play where both players put in a coin and the winner takes both.",
+d:["Designed the exterior for 3D printing and wood laser cutting","Planned the electronics and did the soldering","An Arduino handles all the electronics, and a Raspberry Pi drives the screens and runs the games, programmed by a teammate","Another teammate built the coin mechanism"],
+ex:[["The games", "The games are simple: a Mario-style platformer, a simple racing game and something like ping-pong."], ["The coin mechanism", "Both players insert a coin to play. A lamp is always lit inside, and when a coin drops in, it blocks the light. A light sensor notices this and registers that the coin is there. When one player wins, both coins are dropped into a single compartment and handed to the winner. A teammate built this mechanism."]],
+hero:"c3",hc:"Top view: two screens, two sets of controls, one player on each side.",
+g:[["c1","Front and side: the 3D-printed grips and the patterned black body."],["c2","The other side of the same build."]],
+r:"It works as intended: two players, a few games and the coin bet. A video of it in use is coming.",
+rf:"It can surely be better, but we had little time next to all our other classes."},
+{s:"lisbon",t:"Lisbon 1755",tag:"VR, historical reconstruction",st:"In progress",
+sum:"A VR experience about the Lisbon earthquake that teaches survival and first aid inside a reconstruction of the city.",
+f:{Role:"Team lead, level design",Stage:"Blockout nearly done",Next:"Designing the houses",Focus:"Survival, first aid, history",Hardware:"Planned: synced moving platform"},
+wip:"the experience is still being built, and this page shows the current stage.",
+b:"Our goal is an immersive VR experience with an educational purpose: the player lives through the earthquake in a historically grounded Lisbon and learns survival and first aid. We will also build a special moving platform, synced with the in-game earthquakes, to prevent motion sickness and boost immersion.",
+d:["Lead the project team","Sculpted the terrain around the three hills the city sits between","Laid the streets out from period maps","Defined playable, visible and background areas"],
+ex:[["What the player learns", "The player learns how to survive during an earthquake, how to give first aid, and the historical context of the event."], ["Sources and method", "The sources are mainly Quake, Lisbon’s earthquake museum, which is our main reference, and paintings of the city made before the earthquake. I use them to rebuild the city and the layout of its houses. Exactly how the moving platform will be programmed is not yet decided."], ["Where it stands now", "The blockout is done and the main layout is nearly finished. I am now designing the houses, starting with the main starting house, which will also be modelled inside. I am making several house variants to place around the city so that it looks finished. I will keep updating this page as the work goes on."]],
+hero:"lb",hc:"Blockout in the engine: terrain, streets and grey-box buildings.",
+g:[["lm","Planning the area: playable (red), visible (yellow) and background (purple) over historical maps."]],
+pl:"lis",pc:"Plate: “Destruction of Lisbon”, 18th-century engraving (public domain).",
+r:"Work in progress. The next step is the look of the houses.",
+rf:"Starting from old maps keeps the layout honest and gives the level a real sense of place."},
+{s:"other",t:"Additional 3D projects",tag:"3D modelling, smaller pieces",st:"More to come",
+sum:"A growing collection of smaller 3D pieces: a digital version of a medieval coin made at The Heritage, and a stylised, low-poly desert scene with an RV.",
+f:{Type:"Smaller 3D pieces",Now:"Medieval coin, desert RV scene",Next:"More projects, and a rotatable RV"},
+b:"Smaller 3D pieces that do not need a full project page. The first, an RV in a low-poly desert, was made to explore stylised modelling, lighting and mood.",
+d:["Made a digital version of a medieval coin during a month’s practice at The Heritage, who later used it in their exhibitions","Modelled the RV and the desert set","Rendered the final scene"],
+n:"The coin was made during a one-month practice at <a class=\"ext\" href=\"https://theheritage.art/\" target=\"_blank\" rel=\"noopener\">The Heritage</a>, which creates official digital versions of real artworks.",
+ex:[["How the coin was made", "The company gave me the artwork that appears on the coin, and my task was to bring it into 3D. I vectorised the image in Blender, turned the resulting lines into a mesh and built the coin from it. It was a quick process."]],
+clip:"coin",ch:"Medieval coin",cc:"A digital version of a medieval coin, made at The Heritage.",
+hero:"rv",hc:"The rendered scene: an RV in the desert.",g:[],
+r:"Two finished pieces so far. A version of the RV that you can rotate on this page is planned.",rf:"A small piece that taught me how much lighting changes a simple model."},
+{s:"motion",t:"Additional video and motion",tag:"Video editing, storytelling",st:"Two videos so far",
+sum:"Short videos made to practise editing and visual storytelling: a continuous story told through découpage, and an advertisement that mixes voiceover, timelapse and stop-motion.",
+f:{Type:"Video editing",Focus:"Continuous storytelling",Techniques:"Découpage, voiceover, timelapse, stop-frame animation"},
+b:"Free-topic video assignments, made to show that I can tell a continuous story through editing.",
+d:["Découpage: filmed the whole process of drawing from several angles and edited it into a short, continuous story with jump cuts","LEGO advertisement: used a LEGO set I owned and combined continuous editing, my own voiceover, a timelapse construction and stop-frame animation"],nohero:1,
+ex:[["Découpage: how it was made", "I made a short plan first, then shot the video myself in one evening. The shooting was improvised, because the process I was filming, drawing, could not be redone. I filmed the whole thing from several angles and then edited it down with jump cuts so it stays short and interesting."], ["LEGO advertisement: how it was made", "I started by presenting the box, then filmed a timelapse of building the set, with good lighting and a carefully placed camera, and showed the finished figure. The stop-frame animation took another evening, since it was my first time. Editing took a further evening, choosing the music and building the sound. Many people liked this video."], ["Voiceover", "I recorded the voiceover myself, because I enjoy voice work. I haven’t done it professionally, and this video is the only place I’ve done it, but I like it and would like to do more."]],
+vids:[["-6pXZJlhW2k","Découpage","A free-topic continuous story following one character."],["-DI-I1z_5SE","LEGO advertisement","A free-topic advertisement with continuous editing, my own voiceover, a timelapse build and stop-frame animation."]],g:[],
+r:"Two finished videos that show continuity and storytelling through editing.",rf:"These pieces show the storytelling side of my work, alongside the 3D projects."}
+];
+// ===== end of project data =====
+const $=s=>document.querySelector(s);
+const fig=(k,c)=>`<figure><img src="${IMG[k]}" alt="${c}" loading="lazy"><figcaption>${c}</figcaption></figure>`;
+const plate=(k,c)=>`<figure class="plate"><img src="${IMG[k]}" alt="${c}"><figcaption>${c}</figcaption></figure>`;
+const FLOW=f=>{const q=(a,c)=>`<figure class="eq${c||""}"><img src="${IMG[a[0]]}" alt="${a[1]}" loading="lazy"><figcaption>${a[1]}</figcaption></figure>`;return `<h3>${f.h}</h3><div class="flow">${q(f.a)}<svg class="arr" viewBox="0 0 24 70" aria-hidden="true"><path d="M12 0v62M3 52l9 14 9-14" fill="none" stroke="#4fd67a" stroke-width="2"/></svg><div class="pair">${q(f.b)}<span class="plus mono">+</span>${q(f.c)}</div></div>`};
+const YT=v=>`<h3>${v[1]}</h3><div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/${v[0]}" title="${v[1]}" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div><p class="vc">${v[2]}</p><p><a class="ext" href="https://youtu.be/${v[0]}" target="_blank" rel="noopener">Open on YouTube</a></p>`;
+const COV={necro:"nh1",zlatna:"zn",byte:"c3",lisbon:"lb",microciv:"mo",other:"rv"};
+const tile=(p,d)=>`<a class="tile" href="#/${p.s}"${d?' tabindex="-1" aria-hidden="true"':""}><img src="${IMG[COV[p.s]]}" alt="${d?"":p.t}"><span>${p.t}</span></a>`;
+const dial=`<svg class="dial" viewBox="0 0 240 240" aria-hidden="true"><circle cx="120" cy="120" r="112" fill="none" stroke="#4fd67a" stroke-width="2"/><g class="r"><circle cx="120" cy="120" r="94" fill="none" stroke="#2f8f4d" stroke-width="10" stroke-dasharray="2 8"/></g><circle cx="120" cy="120" r="76" fill="none" stroke="#4fd67a" stroke-width="1.5"/><path d="M120 62l50 29v58l-50 29-50-29V91z" fill="none" stroke="#2f8f4d" stroke-width="1.5"/><text x="120" y="138" text-anchor="middle" font-family="UnifrakturCook,serif" font-size="54" fill="#4fd67a">H</text></svg>`;
+function stream(){return `<div class="wrap"><section class="hero"><div><h1>Heorhii<small>(George)</small>Andruskyi</h1><p class="lead">I design game environments with stories built into them, and I model 3D objects and products of every kind. I am curious about everything and passionate about what I do. Looking for an internship in games, 3D, interactive or XR.</p></div>${dial}</section><section class="car" aria-label="Projects"><div class="trk">${P.filter(p=>COV[p.s]).map(p=>tile(p)).join("")}${P.filter(p=>COV[p.s]).map(p=>tile(p,1)).join("")}</div></section></div>${portfolio()}${about()}`}
+function portfolio(){return `<div class="wrap"><h2 id="toc">Portfolio</h2>${P.map((p,i)=>`<a class="row" href="#/${p.s}"><span class="n">${R[i]}</span>${COV[p.s]?`<img class="th" src="${IMG[COV[p.s]]}" alt="">`:'<span class="th"></span>'}<span><b>${p.t}</b><small>${p.tag}</small></span><span class="st${p.wip?" wip-st":""}">${p.ls||p.st}</span></a>`).join("")}</div>`}
+const ic=(k,n)=>`<span class="sk"><img src="${IMG[k]}" alt="">${n}</span>`,am=(m,n)=>`<span class="sk"><i>${m}</i>${n}</span>`;
+function about(){return `<div class="wrap"><h2 id="about">About</h2><div class="two"><div><p>I am a third-year Creative Technologies student at KdG in Antwerp, Belgium. What I enjoy most is environment design: houses, architecture and props that tell a story and share one theme and atmosphere. I like thinking through a whole environment, lore included, before I build it.</p><p>Fantasy and the medieval world are my home ground. I also love sci-fi, though I have not built in it yet. I make physical things too, from soldering a console to designing a bottle.</p><p>I am looking for an internship in games, interactive or XR, where I can build environments.</p><p class="mono" style="margin-bottom:6px">Languages</p><div class="chips"><span>English</span><span>Dutch</span><span>Russian</span><span>Ukrainian</span><span>Czech</span></div><p class="mono" style="margin-bottom:6px">Skills</p><div class="chips">${ic("blender","Blender")}${ic("unity","Unity")}${am("Ai","Adobe Illustrator")}${am("Pr","Adobe Premiere Pro")}${am("Ps","Adobe Photoshop")}${am("Ae","Adobe After Effects")}</div></div><figure style="margin:0"><img src="${IMG.me}" alt="Portrait of Heorhii Andruskyi"><figcaption>Heorhii (George) Andruskyi</figcaption></figure></div><h2 id="contact">Contact</h2><p>Email: <a class="ext" href="mailto:andrusjora@gmail.com">andrusjora@gmail.com</a><br>GitHub: <a class="ext" href="https://github.com/gogdushegub" target="_blank" rel="noopener">gogdushegub</a><br>ArtStation: <a class="ext" href="https://www.artstation.com/heorhiiandruskyi7" target="_blank" rel="noopener">heorhiiandruskyi7</a><br>LinkedIn: <a class="ext" href="https://www.linkedin.com/in/heorhii-andruskyi-776614446/" target="_blank" rel="noopener">heorhii-andruskyi</a><br>CV: <a class="ext" href="Heorhii_Andruskyi_CV_EN_NL.pdf" target="_blank" rel="noopener">Download (English and Dutch, PDF)</a></p></div>`}
+function proj(p){const i=P.indexOf(p),n=P[i+1];return `<div class="wrap"><a class="back" href="#/portfolio">Back to portfolio</a><article class="page"><div class="mono">Chapter ${R[i]}, ${p.st}</div>${p.wip?`<div class="wip">Work in progress: ${p.wip}</div>`:""}<h2>${p.t}</h2><p class="lead">${p.sum}</p>${p.hero?(p.hero==="bt"?plate(p.hero,p.hc):fig(p.hero,p.hc)):p.nohero?"":'<div class="ph">photos coming soon</div>'}<dl class="facts">${Object.entries(p.f).map(([k,v])=>`<div><dt class="mono">${k}</dt><dd>${v}</dd></div>`).join("")}</dl><h3>The brief</h3><p>${p.b}</p><h3>What I did</h3><ul>${p.d.map(x=>`<li>${x}</li>`).join("")}</ul>${p.n?`<p class="note">${p.n}</p>`:""}${p.ex?p.ex.map(x=>`<h3>${x[0]}</h3><p>${x[1]}</p>`).join(""):""}${p.clip?`<h3>${p.ch}</h3><figure><video controls loop muted playsinline preload="metadata" poster="${IMG.coinp}"><source src="${VID[p.clip][0]}" type="video/mp4"></video><figcaption>${p.cc}</figcaption></figure>`:""}${p.fl?FLOW(p.fl):""}${p.vids?p.vids.map(YT).join(""):""}${p.video?`<h3>${p.vh||"Video"}</h3><div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/${p.video}" title="${p.vh||"Video"}" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div><p><a class="ext" href="https://youtu.be/${p.video}" target="_blank" rel="noopener">Open on YouTube</a></p>`:""}${p.g.length?`<h3>${p.gh||"Process"}</h3><div class="gal">${p.g.map(([k,c])=>fig(k,c)).join("")}</div>`:""}${p.x?`<h3>${p.x[0]}</h3><div class="two xt">${fig(p.x[1],p.x[3])}<p>${p.x[2]}</p></div>`:""}${p.pl?plate(p.pl,p.pc):""}<h3>Result</h3><p>${p.r}</p><h3>Reflection</h3><p>${p.rf}</p></article>${n?`<a class="btn" href="#/${n.s}">Next: ${n.t}</a>`:""}<br><a class="back" href="#/portfolio">Back to portfolio</a></div>`}
+let raf=0;
+function route(){cancelAnimationFrame(raf);const h=location.hash.slice(2),p=P.find(x=>x.s===h),pg={"":stream,portfolio:stream,about:stream,contact:stream},act=p?"portfolio":h==="contact"?"about":pg[h]?h:"";
+$("#app").innerHTML=(p?proj(p):(pg[h]||stream)())+`<div class="wrap"><div class="folio mono">folio ${p?R[P.indexOf(p)]:"i"}</div></div>`;
+document.querySelectorAll("header nav a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#/"+act));
+const a=$("#app");a.classList.remove("turn");void a.offsetWidth;a.classList.add("turn");
+const sc={portfolio:"toc",about:"about",contact:"contact"}[h];if(sc)document.getElementById(sc).scrollIntoView();else scrollTo(0,0);car()}
+function car(){const c=document.querySelector(".car");if(!c)return;const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;let hov=0,dir=0,hold=0,last=performance.now(),pos=0;
+const half=()=>c.scrollWidth/2;pos=c.scrollLeft=half()*.5;
+c.addEventListener("pointermove",e=>{if(e.pointerType!=="mouse")return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5;hov=1;dir=Math.abs(x)<.12?0:x*2});
+c.addEventListener("pointerleave",()=>{hov=0;dir=0});
+["pointerdown","wheel","touchstart"].forEach(n=>c.addEventListener(n,()=>{hold=performance.now()+2500},{passive:true}));
+c.addEventListener("focusin",()=>{hov=1;dir=0});c.addEventListener("focusout",()=>{hov=0});
+const f=t=>{const dt=Math.min(t-last,50)/1000;last=t;const hf=half();if(Math.abs(c.scrollLeft-pos)>2)pos=c.scrollLeft;
+if(!rm&&t>hold)pos+=(hov?dir*340:36)*dt;
+const mx=2*hf-c.clientWidth-2;if(pos>=mx)pos-=hf;if(pos<=2)pos+=hf;c.scrollLeft=pos;raf=requestAnimationFrame(f)};raf=requestAnimationFrame(f)}
+function err(e){document.getElementById("app").innerHTML='<div class="wrap"><p>Something went wrong loading this page: '+e.message+"</p></div>"}
+addEventListener("hashchange",()=>{try{route()}catch(e){err(e)}});try{route()}catch(e){err(e)}
+</script></body></html>
+Portfolio site, Heorhii Andruskyi
+
+Files:
+- index.html: the whole site. Project texts are in the block that starts with "const P=[" near the top of the script. To add or change a project, edit that block.
+- img/: all images and the coin video. Keep the file names, or change them in the "const IMG=" line.
+- Heorhii_Andruskyi_CV_EN_NL.pdf: the CV that the Contact section links to.
+
+To publish: upload this whole folder (not a zip inside a folder) to a static host, for example Netlify Drop or GitHub Pages.
+To update later: change the files and upload the folder again.
